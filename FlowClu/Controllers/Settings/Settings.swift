@@ -16,8 +16,17 @@ class Settings: UIViewController {
     }
 
     @IBAction func logoutTap(_ sender: Any) {
+        print("I am working 11111111=======================================check anagin")
+
         try! Auth.auth().signOut()
-self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
+        print("I am working=======================================check anagin")
+        UserDefaults.standard.removeObject(forKey: "myID")
+        
+        let MainScreenStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let initialNavigationController = MainScreenStoryboard.instantiateInitialViewController() as! UINavigationController
+        self.present(initialNavigationController, animated: true, completion: nil)
+        
+//        self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
     
     }
 }

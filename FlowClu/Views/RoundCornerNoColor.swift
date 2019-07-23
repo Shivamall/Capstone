@@ -4,7 +4,7 @@ import UIKit
 
 @IBDesignable class RoundButtonNoColor: UIButton {
     
-    @IBInspectable var cornerRadius: CGFloat = 15 {
+    @IBInspectable  override var cornerRadius: CGFloat  {
         didSet {
             refreshCorners(value: cornerRadius)
         }

@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FlowClu/Controllers/AuthVCs/EmailSignUpVC.swift"
-            timestampString = "585168537.8831151"
+            timestampString = "585230214.8534859"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "153"
-            endingLineNumber = "153"
+            startingLineNumber = "161"
+            endingLineNumber = "161"
             landmarkName = "handleSignUp()"
             landmarkType = "7">
          </BreakpointContent>

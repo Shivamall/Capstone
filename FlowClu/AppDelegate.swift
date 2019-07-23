@@ -10,8 +10,10 @@ import UIKit
 import Firebase
 import GoogleSignIn
 
-let primaryColor = UIColor(red: 210/255, green: 109/255, blue: 180/255, alpha: 1)
-let secondaryColor = UIColor(red: 52/255, green: 148/255, blue: 230/255, alpha: 1)
+
+
+let primaryColor = UIColor(red: 98/255, green: 50/255, blue: 50/255, alpha: 1)
+let secondaryColor = UIColor(red: 5/255, green: 72/255, blue: 62/255, alpha: 1)
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
 
@@ -56,7 +58,9 @@ var window: UIWindow?
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
         return GIDSignIn.sharedInstance().handle(url,
                                                  sourceApplication:options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String,
-                                                 annotation: [:])
+                                                 annotation:options [UIApplication.OpenURLOptionsKey.annotation])
+        
+        
     }
     
     
@@ -72,17 +76,7 @@ var window: UIWindow?
 
         }
         
-        guard let authentication = user.authentication else { return }
-        let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
-                                                       accessToken: authentication.accessToken)
-        
-        
-        
-        Auth.auth().signIn(with: credential) { (authResult, error) in
-            if let error = error {
-             print(error.localizedDescription)
-                return
-            }
+
             else{
                 guard let authentication = user.authentication else { return }
                 let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
@@ -129,5 +123,5 @@ var window: UIWindow?
    
 
 
-}
+
 

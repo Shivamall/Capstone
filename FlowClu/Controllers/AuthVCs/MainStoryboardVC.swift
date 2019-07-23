@@ -15,10 +15,15 @@ import GoogleSignIn
 
 class MainStoryboardVC: UIViewController, GIDSignInUIDelegate{
     
-  var gradient : CAGradientLayer!
+    @IBOutlet weak var signUpButton: UIButton!
+ 
+    @IBOutlet weak var loginButtonDesg: UIButton!
+    
+
+    var loginButton : RoundedWhiteButton!
     @IBOutlet weak var signInButton: GIDSignInButton!
     @IBAction func signOutButton(_ sender: Any) {
-        
+  
         GIDSignIn.sharedInstance()?.disconnect()
         print("=================discvonnected=====================")
         view.reloadInputViews()
@@ -32,8 +37,25 @@ class MainStoryboardVC: UIViewController, GIDSignInUIDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//         signup Design =====
+        signUpButton.layer.cornerRadius = 20
+        signUpButton.clipsToBounds = true
+        signUpButton.backgroundColor = color1
+        
+        
+//        Login Design =====
+        loginButtonDesg.layer.cornerRadius = 20
+        loginButtonDesg.clipsToBounds = true
+        loginButtonDesg.backgroundColor = white
+        loginButtonDesg.layer.borderWidth = 3
+        loginButtonDesg.layer.borderColor = color1.cgColor
+    
+        
+    
+        
         // Do any additional setup after loading the view.
-        view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
+//        view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
         
         GIDSignIn.sharedInstance().uiDelegate = self
 //        GIDSignIn.sharedInstance().signIn()
@@ -42,6 +64,7 @@ class MainStoryboardVC: UIViewController, GIDSignInUIDelegate{
         
     }
     
+   
     
     @IBAction func signUpTap(_ sender: Any) {
         self.performSegue(withIdentifier: "signUpScreen", sender: self)
@@ -51,6 +74,8 @@ class MainStoryboardVC: UIViewController, GIDSignInUIDelegate{
          self.performSegue(withIdentifier: "loginScreen", sender: self)
     }
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
         
         
         handle = Auth.auth().addStateDidChangeListener { (auth, user) in
@@ -59,12 +84,19 @@ class MainStoryboardVC: UIViewController, GIDSignInUIDelegate{
             // [END_EXCLUDE]
         }
     }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
 
     override func viewDidAppear(_ animated: Bool) {
         Auth.auth().removeStateDidChangeListener(handle!)
+
         super.viewDidAppear(animated)
         
-        if let user = Auth.auth().currentUser {
+       if let user = Auth.auth().currentUser {
+            print(user)
             self.performSegue(withIdentifier: "HomeScreen", sender: self)
         }
     }

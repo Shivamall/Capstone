@@ -21,12 +21,20 @@ class EmailSignUpVC: UIViewController, UITextFieldDelegate  {
     @IBOutlet weak var passwordsUnmatchLabel: UILabel!
     var activityView:UIActivityIndicatorView!
     var continueButton : RoundedWhiteButton!
-  
+    
+    @IBAction func loginScreen(_ sender: Any) {
+        
+        let signInScreen = self.storyboard?.instantiateViewController(withIdentifier: "loginScreen") as!SignInVC
+        self.navigationController?.pushViewController(signInScreen, animated: true)
+//        self.present(nextTab, animated:true, completion:nil)
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-          view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
-//      
+//          view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
+//
         
         continueButton = RoundedWhiteButton(frame: CGRect(x: 0, y: 0, width: 200, height: 50))
         continueButton.setTitleColor(secondaryColor, for: .normal)
@@ -40,7 +48,7 @@ class EmailSignUpVC: UIViewController, UITextFieldDelegate  {
         view.addSubview(continueButton)
         setContinueButton(enabled: false)
         
-        activityView = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+        activityView = UIActivityIndicatorView(style: .gray)
         activityView.color = secondaryColor
         activityView.frame = CGRect(x: 0, y: 0, width: 50.0, height: 50.0)
         activityView.center = continueButton.center
@@ -62,7 +70,7 @@ class EmailSignUpVC: UIViewController, UITextFieldDelegate  {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         nameTextField.becomeFirstResponder()
-        NotificationCenter.default.addObserver(self, selector:#selector(keyboardWillAppear), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector:#selector(keyboardWillAppear), name: UIResponder.keyboardWillShowNotification, object: nil)
         
     }
     
@@ -85,7 +93,7 @@ class EmailSignUpVC: UIViewController, UITextFieldDelegate  {
     @objc func keyboardWillAppear(notification: NSNotification){
         
         let info = notification.userInfo!
-        let keyboardFrame: CGRect = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
+        let keyboardFrame: CGRect = (info[UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
         
         continueButton.center = CGPoint(x: view.center.x,
                                         y: view.frame.height - keyboardFrame.height - 16.0 - continueButton.frame.height / 2)
@@ -154,6 +162,92 @@ class EmailSignUpVC: UIViewController, UITextFieldDelegate  {
                 print("User created!")
                
                 
+                //                let usernamefire = Auth.auth().currentUser!.displayName
+                let userEmail = Auth.auth().currentUser!.email
+                let userId = Auth.auth().currentUser!.uid
+                print(userId,"======signup=====", userEmail as Any,
+                      "==========================")
+                print(username as Any , "==========================signup===============================")
+                
+                //                upload to sql
+                
+                
+                
+                let url = NSURL(string: "https://floclu.ca/insertfirebase.php")
+                var request = URLRequest(url: url! as URL)
+                request.httpMethod = "POST"
+                
+                var dataString = "secretWord=44fdcv8jf3"
+                
+                dataString = dataString + "&userid=\(String(describing: userId))"
+                dataString = dataString + "&email=\(String(describing: userEmail))"
+                dataString = dataString + "&username=\(String(describing: username))"
+                
+                print(dataString, "=================test=================")
+                
+                let dataD = dataString.data(using: .utf8) // convert to utf8 string
+                
+                do
+                {
+                    
+                    // the upload task, uploadJob, is defined here
+                    
+                    let uploadJob = URLSession.shared.uploadTask(with: request, from: dataD)
+                    {
+                        data, response, error in
+                        
+                        if error != nil {
+                            
+                            // display an alert if there is an error inside the DispatchQueue.main.async
+                            
+                            DispatchQueue.main.async
+                                {
+                                    let alert = UIAlertController(title: "Upload Didn't Work?", message: "Looks like the connection to the server didn't work.  Do you have Internet access?", preferredStyle: .alert)
+                                    alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+                                    self.present(alert, animated: true, completion: nil)
+                            }
+                        }
+                        else
+                        {
+                            if let unwrappedData = data {
+                                
+                                let returnedData = NSString(data: unwrappedData, encoding: String.Encoding.utf8.rawValue) // Response from web server hosting the database
+                                
+                                if returnedData == "1" // insert into database worked
+                                {
+                                    
+                                    // display an alert if no error and database insert worked (return = 1) inside the DispatchQueue.main.async
+                                    
+                                    DispatchQueue.main.async
+                                        {
+                                            let alert = UIAlertController(title: "Upload OK?", message: "Looks like the upload and insert into the database worked.", preferredStyle: .alert)
+                                            alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+                                            self.present(alert, animated: true, completion: nil)
+                                    }
+                                }
+                                else
+                                {
+                                    // display an alert if an error and database insert didn't worked (return != 1) inside the DispatchQueue.main.async
+                                    
+                                    DispatchQueue.main.async
+                                        {
+                                            
+                                            let alert = UIAlertController(title: "Upload Didn't Work", message: "Looks like the insert into the database did not worked.", preferredStyle: .alert)
+                                            alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+                                            self.present(alert, animated: true, completion: nil)
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    uploadJob.resume()
+                    
+                }
+                
+                
+                //                upload to sql end
+                
+                
                 let changeRequest = Auth.auth().currentUser?.createProfileChangeRequest()
                 changeRequest?.displayName = username
                 
@@ -164,24 +258,23 @@ class EmailSignUpVC: UIViewController, UITextFieldDelegate  {
                         self.dismiss(animated: false, completion: nil)
                     } else {
                         
-                        if let errCode = AuthErrorCode(rawValue: error!._code) {
-                            
-                            switch errCode {
-                            case .emailAlreadyInUse:
-                                print(" This email is already in use", ".....................................................")
-                                
-                                let alert = UIAlertController(title:preferredStyle: .Alert)
-                                
-                                
-                                let alert = UIAlertController(title: "عذرًا", message:"خطأ في الاتصال بالانترنت", preferredStyle: .Alert)
-                                alert.addAction(UIAlertAction(title: "نعم", style: .Default) { _ in })
-                                self.presentViewController(alert, animated: true){}
-                            default:
-                                print("Create User Error: \(error)")
-                            }
-                        }
-                        print("Error: \(error!.localizedDescription)")
+                       if let errCode = AuthErrorCode(rawValue: error!._code) {
                         
+                        switch errCode {
+                        case .emailAlreadyInUse:
+                            print(" This email is already in use", ".....................................................")
+                            
+                            let alert = UIAlertController(title:"Email Laready Exist", message: "BC Email haigi a sade kol", preferredStyle: .alert)
+                            alert.addAction(UIAlertAction(title: "Email Wrong A Saliya", style: .default) { _ in })
+                            
+                        
+                            self.present(alert, animated: true){}
+                        default:
+                            print("Create User Error: \(String(describing: error))")
+                        }
+                    }
+                    print("Error: \(error!.localizedDescription)")
+                    
                     }
                 }
                 
@@ -203,5 +296,23 @@ class EmailSignUpVC: UIViewController, UITextFieldDelegate  {
     }
     */
 
+    
+    
+    
+//    keyboard hide code
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    
+//    override func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+//        textField.resignFirstResponder()
+//
+//        return true
+//    }
+//    
+    
+//    keyboard hide code ends
 
 }

@@ -23,7 +23,7 @@ class PostsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     func getdata() {
-        let url = URL(string: "http://sagarkalyan81.000webhostapp.com/posts.php")
+        let url = URL(string: "https://floclu.ca/posts.php")
         URLSession.shared.dataTask(with: url!) { (data, response, error) in
             do {
                 if error == nil {

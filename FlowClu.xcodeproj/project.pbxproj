@@ -7,15 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40AD5D3222E1D9E30083F864 /* addPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AD5D3122E1D9E30083F864 /* addPost.swift */; };
+		40AD5D3422E1E2450083F864 /* dataRequestStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AD5D3322E1E2450083F864 /* dataRequestStruct.swift */; };
 		40F769B922E0435D00CE3EE0 /* RoundedWhiteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F769B822E0435D00CE3EE0 /* RoundedWhiteButton.swift */; };
 		40F769BB22E044A200CE3EE0 /* HelperExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F769BA22E044A200CE3EE0 /* HelperExtension.swift */; };
 		40F769BE22E0F03A00CE3EE0 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F769BD22E0F03A00CE3EE0 /* Settings.swift */; };
 		502FC9771AFC1D01DB50C4BB /* Pods_FlowClu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50E8B6DE8A5F8E6BAC5D634F /* Pods_FlowClu.framework */; };
+		7536D08122E65953000900EC /* calendarEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7536D08022E65953000900EC /* calendarEntry.swift */; };
+		7536D08322E6775D000900EC /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7536D08222E6775D000900EC /* Date+Extension.swift */; };
+		7536D08522E677B1000900EC /* UIAlertController+Extemsions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7536D08422E677B1000900EC /* UIAlertController+Extemsions.swift */; };
+		7536D08722E67A48000900EC /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7536D08622E67A48000900EC /* UIView+Extension.swift */; };
+		7536D08922E688AA000900EC /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7536D08822E688AA000900EC /* DatePickerViewController.swift */; };
+		7536D08B22E6894C000900EC /* PickerViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7536D08A22E6894C000900EC /* PickerViewViewController.swift */; };
 		7579A2C922D91B930010CAD6 /* DateHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7579A2C822D91B930010CAD6 /* DateHeader.swift */; };
 		7579A2CF22DD5AA70010CAD6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7579A2CE22DD5AA60010CAD6 /* GoogleService-Info.plist */; };
 		75F8B06A22CFC6FF0034D78A /* HelpListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F8B06922CFC6FF0034D78A /* HelpListViewController.swift */; };
 		75F8B06C22CFD06B0034D78A /* TableCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F8B06B22CFD06B0034D78A /* TableCellTableViewCell.swift */; };
 		75F8B06E22CFD23A0034D78A /* MapLinkDirectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F8B06D22CFD23A0034D78A /* MapLinkDirectionViewController.swift */; };
+		B7FDA0F822E141FE00B99A62 /* color-code.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FDA0F722E141FD00B99A62 /* color-code.swift */; };
+		B7FDA0FE22E1640500B99A62 /* DesignableUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FDA0FD22E1640500B99A62 /* DesignableUITextField.swift */; };
 		F4102E5F22CD4A5D00A526CF /* AlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4102E5E22CD4A5D00A526CF /* AlertVC.swift */; };
 		F4102E6522CD4D4000A526CF /* Oxygen-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4102E6122CD4D4000A526CF /* Oxygen-Regular.ttf */; };
 		F4102E6622CD4D4000A526CF /* Oxygen-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4102E6222CD4D4000A526CF /* Oxygen-Light.ttf */; };
@@ -58,15 +68,25 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		40AD5D3122E1D9E30083F864 /* addPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addPost.swift; sourceTree = "<group>"; };
+		40AD5D3322E1E2450083F864 /* dataRequestStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataRequestStruct.swift; sourceTree = "<group>"; };
 		40F769B822E0435D00CE3EE0 /* RoundedWhiteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedWhiteButton.swift; sourceTree = "<group>"; };
 		40F769BA22E044A200CE3EE0 /* HelperExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperExtension.swift; sourceTree = "<group>"; };
 		40F769BD22E0F03A00CE3EE0 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		50E8B6DE8A5F8E6BAC5D634F /* Pods_FlowClu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlowClu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7536D08022E65953000900EC /* calendarEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calendarEntry.swift; sourceTree = "<group>"; };
+		7536D08222E6775D000900EC /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		7536D08422E677B1000900EC /* UIAlertController+Extemsions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extemsions.swift"; sourceTree = "<group>"; };
+		7536D08622E67A48000900EC /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		7536D08822E688AA000900EC /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		7536D08A22E6894C000900EC /* PickerViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewViewController.swift; sourceTree = "<group>"; };
 		7579A2C822D91B930010CAD6 /* DateHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHeader.swift; sourceTree = "<group>"; };
 		7579A2CE22DD5AA60010CAD6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		75F8B06922CFC6FF0034D78A /* HelpListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpListViewController.swift; sourceTree = "<group>"; };
 		75F8B06B22CFD06B0034D78A /* TableCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellTableViewCell.swift; sourceTree = "<group>"; };
 		75F8B06D22CFD23A0034D78A /* MapLinkDirectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLinkDirectionViewController.swift; sourceTree = "<group>"; };
+		B7FDA0F722E141FD00B99A62 /* color-code.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "color-code.swift"; sourceTree = "<group>"; };
+		B7FDA0FD22E1640500B99A62 /* DesignableUITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableUITextField.swift; sourceTree = "<group>"; };
 		D07158118A71933BA01D3BBF /* Pods-FlowClu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowClu.debug.xcconfig"; path = "Target Support Files/Pods-FlowClu/Pods-FlowClu.debug.xcconfig"; sourceTree = "<group>"; };
 		F4102E5E22CD4A5D00A526CF /* AlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertVC.swift; sourceTree = "<group>"; };
 		F4102E6122CD4D4000A526CF /* Oxygen-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oxygen-Regular.ttf"; sourceTree = "<group>"; };
@@ -169,6 +189,7 @@
 				F4102E5E22CD4A5D00A526CF /* AlertVC.swift */,
 				F4102E9222CE09A800A526CF /* PostsVC.swift */,
 				F4102E9422CEB75F00A526CF /* PostDetailsVC.swift */,
+				40AD5D3122E1D9E30083F864 /* addPost.swift */,
 			);
 			path = HomeVCs;
 			sourceTree = "<group>";
@@ -205,7 +226,14 @@
 		F429255B22B8885E006EEA3B /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				B7FDA0FD22E1640500B99A62 /* DesignableUITextField.swift */,
+				B7FDA0F722E141FD00B99A62 /* color-code.swift */,
 				F429256022B88AE7006EEA3B /* Extensions.swift */,
+				7536D08222E6775D000900EC /* Date+Extension.swift */,
+				7536D08422E677B1000900EC /* UIAlertController+Extemsions.swift */,
+				7536D08622E67A48000900EC /* UIView+Extension.swift */,
+				7536D08822E688AA000900EC /* DatePickerViewController.swift */,
+				7536D08A22E6894C000900EC /* PickerViewViewController.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -236,7 +264,7 @@
 			isa = PBXGroup;
 			children = (
 				F46F627B22D8F62A000919AD /* CalendarVC.swift */,
-				7579A2C822D91B930010CAD6 /* DateHeader.swift */,
+				7536D08022E65953000900EC /* calendarEntry.swift */,
 			);
 			path = CalendarVCs;
 			sourceTree = "<group>";
@@ -280,9 +308,11 @@
 		F4E1E55B22AB6BA100794980 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				40AD5D3322E1E2450083F864 /* dataRequestStruct.swift */,
 				F4102E8E22CE05A700A526CF /* DataSet.swift */,
 				F4102E9022CE060400A526CF /* Post.swift */,
 				F46F627D22D8F818000919AD /* DateCell.swift */,
+				7579A2C822D91B930010CAD6 /* DateHeader.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -345,6 +375,7 @@
 				TargetAttributes = {
 					F4E1E54322AB4E9700794980 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -462,23 +493,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7536D08722E67A48000900EC /* UIView+Extension.swift in Sources */,
 				F4102E6E22CD580C00A526CF /* HEX.swift in Sources */,
 				F4102E6C22CD542600A526CF /* RoundButton.swift in Sources */,
 				F4102E9322CE09A800A526CF /* PostsVC.swift in Sources */,
 				F4102E9522CEB75F00A526CF /* PostDetailsVC.swift in Sources */,
 				F4E1E54A22AB4E9700794980 /* MainStoryboardVC.swift in Sources */,
+				7536D08B22E6894C000900EC /* PickerViewViewController.swift in Sources */,
 				F4102E9122CE060400A526CF /* Post.swift in Sources */,
 				75F8B06E22CFD23A0034D78A /* MapLinkDirectionViewController.swift in Sources */,
 				F4E1E54822AB4E9700794980 /* AppDelegate.swift in Sources */,
 				F4102E8922CDF4B000A526CF /* RoundCornerNoColor.swift in Sources */,
 				40F769BE22E0F03A00CE3EE0 /* Settings.swift in Sources */,
+				B7FDA0F822E141FE00B99A62 /* color-code.swift in Sources */,
+				7536D08922E688AA000900EC /* DatePickerViewController.swift in Sources */,
 				F4E7B91D22B21C2400C64BFE /* HomeStoryboardVC.swift in Sources */,
 				F46F627C22D8F62A000919AD /* CalendarVC.swift in Sources */,
+				7536D08322E6775D000900EC /* Date+Extension.swift in Sources */,
+				40AD5D3422E1E2450083F864 /* dataRequestStruct.swift in Sources */,
 				F429256122B88AE7006EEA3B /* Extensions.swift in Sources */,
 				75F8B06C22CFD06B0034D78A /* TableCellTableViewCell.swift in Sources */,
 				F4E1E56322AB6C6300794980 /* SignInVC.swift in Sources */,
 				75F8B06A22CFC6FF0034D78A /* HelpListViewController.swift in Sources */,
+				7536D08122E65953000900EC /* calendarEntry.swift in Sources */,
 				F4102E5F22CD4A5D00A526CF /* AlertVC.swift in Sources */,
+				7536D08522E677B1000900EC /* UIAlertController+Extemsions.swift in Sources */,
+				B7FDA0FE22E1640500B99A62 /* DesignableUITextField.swift in Sources */,
 				F46F627E22D8F818000919AD /* DateCell.swift in Sources */,
 				F446397922B4C196004CA54C /* GetEmailVC.swift in Sources */,
 				F4E1E56122AB6C1900794980 /* EmailSignUpVC.swift in Sources */,
@@ -487,6 +527,7 @@
 				40F769BB22E044A200CE3EE0 /* HelperExtension.swift in Sources */,
 				F4102E8D22CE036F00A526CF /* PostCell.swift in Sources */,
 				40F769B922E0435D00CE3EE0 /* RoundedWhiteButton.swift in Sources */,
+				40AD5D3222E1D9E30083F864 /* addPost.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -642,10 +683,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.harmangill.FlowClu;
+				PRODUCT_BUNDLE_IDENTIFIER = com.harmangill.FloClu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -664,10 +705,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.harmangill.FlowClu;
+				PRODUCT_BUNDLE_IDENTIFIER = com.harmangill.FloClu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
