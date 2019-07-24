@@ -64,13 +64,34 @@ class calendarEntry: UIViewController{
             
 //             date converter ends
             
-            let today = date
+            let today = Calendar.current.startOfDay(for: date)
+           
+//            let newtoday = Calendar.current.component(., from: today)
             let weekday = Calendar.current.component(.weekday, from: today)
             let month = Calendar.current.component(.month, from: today)
             let date = Calendar.current.component(.day, from: today)
-//             addind value to mobile
+            let year = Calendar.current.component(.year, from: today)
             
-             UserDefaults.standard.set(date, forKey: "lastDate")
+            
+            
+            var dateComponents = DateComponents()
+            dateComponents.year = year
+            dateComponents.month = month
+            
+            let calendar = Calendar.current
+            let datez = calendar.date(from: dateComponents)
+            // change .month into .year to see the days available in the year
+            let interval = calendar.dateInterval(of: .month, for: datez!)!
+            
+            let days = calendar.dateComponents([.day], from: interval.start, to: interval.end).day!
+         
+            
+            
+            
+            
+            
+             UserDefaults.standard.set(today, forKey: "lastDate")
+            UserDefaults.standard.set(days, forKey: "selectedMonthDays")
             
 //            adding value to mibile ends
             
@@ -108,7 +129,7 @@ class calendarEntry: UIViewController{
                 let noDaysInInt : Int = Int(frameSizes[index.row])
                 //             addind value to mobile
                 
-                UserDefaults.standard.set(noDaysInInt, forKey: "noOfDaysValue")
+                UserDefaults.standard.set(noDaysInInt, forKey: "noOfDaysItLastValue")
                 
                 //            adding value to mibile ends
                 self.numbersOfDaysLabel.text = String (noDaysInInt)
@@ -146,7 +167,7 @@ class calendarEntry: UIViewController{
                 let lengthDaysInInt : Int = Int(frameSizes[index.row])
                 //             addind value to mobile
                 
-                UserDefaults.standard.set(lengthDaysInInt, forKey: "lengthOfDaysValue")
+                UserDefaults.standard.set(lengthDaysInInt, forKey: "lengthOfCycleDaysValue")
                 
                 //            adding value to mibile ends
                 self.lengthOfCycleLabel.text = String (lengthDaysInInt)

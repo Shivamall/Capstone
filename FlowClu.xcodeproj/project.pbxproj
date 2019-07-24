@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40A4776222E7CAEC007C0795 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A4776122E7CAEC007C0795 /* CalendarCell.swift */; };
+		40A4776D22E7D8E2007C0795 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A4776C22E7D8E2007C0795 /* Constants.swift */; };
+		40A4777522E8942A007C0795 /* CalendarSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A4777422E8942A007C0795 /* CalendarSectionHeaderView.swift */; };
+		40A4777822E8944F007C0795 /* CalendarSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40A4777722E8944F007C0795 /* CalendarSectionHeaderView.xib */; };
 		40AD5D3222E1D9E30083F864 /* addPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AD5D3122E1D9E30083F864 /* addPost.swift */; };
 		40AD5D3422E1E2450083F864 /* dataRequestStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AD5D3322E1E2450083F864 /* dataRequestStruct.swift */; };
 		40F769B922E0435D00CE3EE0 /* RoundedWhiteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F769B822E0435D00CE3EE0 /* RoundedWhiteButton.swift */; };
@@ -68,6 +72,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		40A4776122E7CAEC007C0795 /* CalendarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
+		40A4776C22E7D8E2007C0795 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		40A4777422E8942A007C0795 /* CalendarSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarSectionHeaderView.swift; sourceTree = "<group>"; };
+		40A4777722E8944F007C0795 /* CalendarSectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarSectionHeaderView.xib; sourceTree = "<group>"; };
 		40AD5D3122E1D9E30083F864 /* addPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addPost.swift; sourceTree = "<group>"; };
 		40AD5D3322E1E2450083F864 /* dataRequestStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataRequestStruct.swift; sourceTree = "<group>"; };
 		40F769B822E0435D00CE3EE0 /* RoundedWhiteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedWhiteButton.swift; sourceTree = "<group>"; };
@@ -153,6 +161,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		40A4777622E8942F007C0795 /* header */ = {
+			isa = PBXGroup;
+			children = (
+				40A4777722E8944F007C0795 /* CalendarSectionHeaderView.xib */,
+				40A4777422E8942A007C0795 /* CalendarSectionHeaderView.swift */,
+			);
+			path = header;
+			sourceTree = "<group>";
+		};
 		40F769BC22E0F00F00CE3EE0 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
@@ -234,6 +251,7 @@
 				7536D08622E67A48000900EC /* UIView+Extension.swift */,
 				7536D08822E688AA000900EC /* DatePickerViewController.swift */,
 				7536D08A22E6894C000900EC /* PickerViewViewController.swift */,
+				40A4776C22E7D8E2007C0795 /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -308,10 +326,12 @@
 		F4E1E55B22AB6BA100794980 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				40A4777622E8942F007C0795 /* header */,
 				40AD5D3322E1E2450083F864 /* dataRequestStruct.swift */,
 				F4102E8E22CE05A700A526CF /* DataSet.swift */,
 				F4102E9022CE060400A526CF /* Post.swift */,
 				F46F627D22D8F818000919AD /* DateCell.swift */,
+				40A4776122E7CAEC007C0795 /* CalendarCell.swift */,
 				7579A2C822D91B930010CAD6 /* DateHeader.swift */,
 			);
 			path = Models;
@@ -420,6 +440,7 @@
 				F46F627822D8F5BC000919AD /* Calendar.storyboard in Resources */,
 				F4102E6722CD4D4000A526CF /* OFL.txt in Resources */,
 				F4102E7D22CDEAEB00A526CF /* OpenSans-Italic.ttf in Resources */,
+				40A4777822E8944F007C0795 /* CalendarSectionHeaderView.xib in Resources */,
 				F4102E7C22CDEAEB00A526CF /* OpenSans-Light.ttf in Resources */,
 				7579A2CF22DD5AA70010CAD6 /* GoogleService-Info.plist in Resources */,
 				F4354DDB22AF75490054BFF2 /* HomeStoryboard.storyboard in Resources */,
@@ -493,6 +514,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40A4776D22E7D8E2007C0795 /* Constants.swift in Sources */,
+				40A4777522E8942A007C0795 /* CalendarSectionHeaderView.swift in Sources */,
 				7536D08722E67A48000900EC /* UIView+Extension.swift in Sources */,
 				F4102E6E22CD580C00A526CF /* HEX.swift in Sources */,
 				F4102E6C22CD542600A526CF /* RoundButton.swift in Sources */,
@@ -524,6 +547,7 @@
 				F4E1E56122AB6C1900794980 /* EmailSignUpVC.swift in Sources */,
 				F4102E8F22CE05A700A526CF /* DataSet.swift in Sources */,
 				7579A2C922D91B930010CAD6 /* DateHeader.swift in Sources */,
+				40A4776222E7CAEC007C0795 /* CalendarCell.swift in Sources */,
 				40F769BB22E044A200CE3EE0 /* HelperExtension.swift in Sources */,
 				F4102E8D22CE036F00A526CF /* PostCell.swift in Sources */,
 				40F769B922E0435D00CE3EE0 /* RoundedWhiteButton.swift in Sources */,
