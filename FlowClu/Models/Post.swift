@@ -11,4 +11,6 @@ import Foundation
 struct Post: Decodable {
     let title : String
     let detail : String
+    let username : String
+    
 }

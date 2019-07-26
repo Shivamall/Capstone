@@ -11,7 +11,7 @@ import UIKit
 class PostsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
     
-    let data = DataSet()
+//    let data = DataSet()
     var arrdata = [Post]()
     
     

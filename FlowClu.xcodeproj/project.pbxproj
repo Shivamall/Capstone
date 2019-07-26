@@ -13,6 +13,16 @@
 		40A4777822E8944F007C0795 /* CalendarSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40A4777722E8944F007C0795 /* CalendarSectionHeaderView.xib */; };
 		40AD5D3222E1D9E30083F864 /* addPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AD5D3122E1D9E30083F864 /* addPost.swift */; };
 		40AD5D3422E1E2450083F864 /* dataRequestStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AD5D3322E1E2450083F864 /* dataRequestStruct.swift */; };
+		40B986C622EA0E0500D9FC43 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B986C522EA0E0500D9FC43 /* CollectionViewCell.swift */; };
+		40B986C822EA0E6700D9FC43 /* CollectionPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B986C722EA0E6700D9FC43 /* CollectionPostView.swift */; };
+		40B986CC22EA26DE00D9FC43 /* PostHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B986CB22EA26DE00D9FC43 /* PostHeaderView.swift */; };
+		40B986CE22EA357700D9FC43 /* UITextView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B986CD22EA357600D9FC43 /* UITextView+Extensions.swift */; };
+		40B986D022EA357C00D9FC43 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B986CF22EA357C00D9FC43 /* UIViewController+Extensions.swift */; };
+		40B986D222EA400700D9FC43 /* AttributedTextBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B986D122EA400700D9FC43 /* AttributedTextBlock.swift */; };
+		40B986D422EA40B100D9FC43 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B986D322EA40B100D9FC43 /* TextViewController.swift */; };
+		40B986D622EA412800D9FC43 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B986D522EA412800D9FC43 /* String+Extensions.swift */; };
+		40B986D822EA44F400D9FC43 /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B986D722EA44F400D9FC43 /* UIApplication+Extensions.swift */; };
+		40B986DA22EA72BC00D9FC43 /* ChatBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40B986D922EA72BC00D9FC43 /* ChatBoard.storyboard */; };
 		40F769B922E0435D00CE3EE0 /* RoundedWhiteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F769B822E0435D00CE3EE0 /* RoundedWhiteButton.swift */; };
 		40F769BB22E044A200CE3EE0 /* HelperExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F769BA22E044A200CE3EE0 /* HelperExtension.swift */; };
 		40F769BE22E0F03A00CE3EE0 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F769BD22E0F03A00CE3EE0 /* Settings.swift */; };
@@ -23,7 +33,6 @@
 		7536D08722E67A48000900EC /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7536D08622E67A48000900EC /* UIView+Extension.swift */; };
 		7536D08922E688AA000900EC /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7536D08822E688AA000900EC /* DatePickerViewController.swift */; };
 		7536D08B22E6894C000900EC /* PickerViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7536D08A22E6894C000900EC /* PickerViewViewController.swift */; };
-		7579A2C922D91B930010CAD6 /* DateHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7579A2C822D91B930010CAD6 /* DateHeader.swift */; };
 		7579A2CF22DD5AA70010CAD6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7579A2CE22DD5AA60010CAD6 /* GoogleService-Info.plist */; };
 		75F8B06A22CFC6FF0034D78A /* HelpListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F8B06922CFC6FF0034D78A /* HelpListViewController.swift */; };
 		75F8B06C22CFD06B0034D78A /* TableCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F8B06B22CFD06B0034D78A /* TableCellTableViewCell.swift */; };
@@ -78,6 +87,16 @@
 		40A4777722E8944F007C0795 /* CalendarSectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarSectionHeaderView.xib; sourceTree = "<group>"; };
 		40AD5D3122E1D9E30083F864 /* addPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addPost.swift; sourceTree = "<group>"; };
 		40AD5D3322E1E2450083F864 /* dataRequestStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataRequestStruct.swift; sourceTree = "<group>"; };
+		40B986C522EA0E0500D9FC43 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		40B986C722EA0E6700D9FC43 /* CollectionPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionPostView.swift; sourceTree = "<group>"; };
+		40B986CB22EA26DE00D9FC43 /* PostHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PostHeaderView.swift; path = FlowClu/Models/PostHeaderView.swift; sourceTree = SOURCE_ROOT; };
+		40B986CD22EA357600D9FC43 /* UITextView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+Extensions.swift"; sourceTree = "<group>"; };
+		40B986CF22EA357C00D9FC43 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		40B986D122EA400700D9FC43 /* AttributedTextBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributedTextBlock.swift; sourceTree = "<group>"; };
+		40B986D322EA40B100D9FC43 /* TextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
+		40B986D522EA412800D9FC43 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		40B986D722EA44F400D9FC43 /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
+		40B986D922EA72BC00D9FC43 /* ChatBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChatBoard.storyboard; sourceTree = "<group>"; };
 		40F769B822E0435D00CE3EE0 /* RoundedWhiteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedWhiteButton.swift; sourceTree = "<group>"; };
 		40F769BA22E044A200CE3EE0 /* HelperExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperExtension.swift; sourceTree = "<group>"; };
 		40F769BD22E0F03A00CE3EE0 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
@@ -88,7 +107,6 @@
 		7536D08622E67A48000900EC /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		7536D08822E688AA000900EC /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
 		7536D08A22E6894C000900EC /* PickerViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewViewController.swift; sourceTree = "<group>"; };
-		7579A2C822D91B930010CAD6 /* DateHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHeader.swift; sourceTree = "<group>"; };
 		7579A2CE22DD5AA60010CAD6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		75F8B06922CFC6FF0034D78A /* HelpListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpListViewController.swift; sourceTree = "<group>"; };
 		75F8B06B22CFD06B0034D78A /* TableCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellTableViewCell.swift; sourceTree = "<group>"; };
@@ -207,6 +225,7 @@
 				F4102E9222CE09A800A526CF /* PostsVC.swift */,
 				F4102E9422CEB75F00A526CF /* PostDetailsVC.swift */,
 				40AD5D3122E1D9E30083F864 /* addPost.swift */,
+				40B986C722EA0E6700D9FC43 /* CollectionPostView.swift */,
 			);
 			path = HomeVCs;
 			sourceTree = "<group>";
@@ -246,6 +265,8 @@
 				B7FDA0FD22E1640500B99A62 /* DesignableUITextField.swift */,
 				B7FDA0F722E141FD00B99A62 /* color-code.swift */,
 				F429256022B88AE7006EEA3B /* Extensions.swift */,
+				40B986CF22EA357C00D9FC43 /* UIViewController+Extensions.swift */,
+				40B986CD22EA357600D9FC43 /* UITextView+Extensions.swift */,
 				7536D08222E6775D000900EC /* Date+Extension.swift */,
 				7536D08422E677B1000900EC /* UIAlertController+Extemsions.swift */,
 				7536D08622E67A48000900EC /* UIView+Extension.swift */,
@@ -264,6 +285,7 @@
 				F4354DDA22AF75490054BFF2 /* HomeStoryboard.storyboard */,
 				F4102E8622CDF05900A526CF /* Settings.storyboard */,
 				F46F627722D8F5BC000919AD /* Calendar.storyboard */,
+				40B986D922EA72BC00D9FC43 /* ChatBoard.storyboard */,
 			);
 			path = Boards;
 			sourceTree = "<group>";
@@ -328,11 +350,16 @@
 			children = (
 				40A4777622E8942F007C0795 /* header */,
 				40AD5D3322E1E2450083F864 /* dataRequestStruct.swift */,
+				40B986D122EA400700D9FC43 /* AttributedTextBlock.swift */,
+				40B986D722EA44F400D9FC43 /* UIApplication+Extensions.swift */,
+				40B986CB22EA26DE00D9FC43 /* PostHeaderView.swift */,
+				40B986D322EA40B100D9FC43 /* TextViewController.swift */,
+				40B986D522EA412800D9FC43 /* String+Extensions.swift */,
 				F4102E8E22CE05A700A526CF /* DataSet.swift */,
 				F4102E9022CE060400A526CF /* Post.swift */,
 				F46F627D22D8F818000919AD /* DateCell.swift */,
 				40A4776122E7CAEC007C0795 /* CalendarCell.swift */,
-				7579A2C822D91B930010CAD6 /* DateHeader.swift */,
+				40B986C522EA0E0500D9FC43 /* CollectionViewCell.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -425,6 +452,7 @@
 				F4102E8122CDEAEB00A526CF /* OpenSans-SemiBoldItalic.ttf in Resources */,
 				F4102E8222CDEAEB00A526CF /* OpenSans-ExtraBoldItalic.ttf in Resources */,
 				F4102E6822CD4D4000A526CF /* Oxygen-Bold.ttf in Resources */,
+				40B986DA22EA72BC00D9FC43 /* ChatBoard.storyboard in Resources */,
 				F4102E6622CD4D4000A526CF /* Oxygen-Light.ttf in Resources */,
 				F4102E7F22CDEAEB00A526CF /* OpenSans-LightItalic.ttf in Resources */,
 				F4102E7B22CDEAEB00A526CF /* OpenSans-SemiBold.ttf in Resources */,
@@ -514,6 +542,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40B986C822EA0E6700D9FC43 /* CollectionPostView.swift in Sources */,
+				40B986CC22EA26DE00D9FC43 /* PostHeaderView.swift in Sources */,
 				40A4776D22E7D8E2007C0795 /* Constants.swift in Sources */,
 				40A4777522E8942A007C0795 /* CalendarSectionHeaderView.swift in Sources */,
 				7536D08722E67A48000900EC /* UIView+Extension.swift in Sources */,
@@ -522,6 +552,9 @@
 				F4102E9322CE09A800A526CF /* PostsVC.swift in Sources */,
 				F4102E9522CEB75F00A526CF /* PostDetailsVC.swift in Sources */,
 				F4E1E54A22AB4E9700794980 /* MainStoryboardVC.swift in Sources */,
+				40B986D022EA357C00D9FC43 /* UIViewController+Extensions.swift in Sources */,
+				40B986D422EA40B100D9FC43 /* TextViewController.swift in Sources */,
+				40B986C622EA0E0500D9FC43 /* CollectionViewCell.swift in Sources */,
 				7536D08B22E6894C000900EC /* PickerViewViewController.swift in Sources */,
 				F4102E9122CE060400A526CF /* Post.swift in Sources */,
 				75F8B06E22CFD23A0034D78A /* MapLinkDirectionViewController.swift in Sources */,
@@ -529,6 +562,7 @@
 				F4102E8922CDF4B000A526CF /* RoundCornerNoColor.swift in Sources */,
 				40F769BE22E0F03A00CE3EE0 /* Settings.swift in Sources */,
 				B7FDA0F822E141FE00B99A62 /* color-code.swift in Sources */,
+				40B986D222EA400700D9FC43 /* AttributedTextBlock.swift in Sources */,
 				7536D08922E688AA000900EC /* DatePickerViewController.swift in Sources */,
 				F4E7B91D22B21C2400C64BFE /* HomeStoryboardVC.swift in Sources */,
 				F46F627C22D8F62A000919AD /* CalendarVC.swift in Sources */,
@@ -540,14 +574,16 @@
 				75F8B06A22CFC6FF0034D78A /* HelpListViewController.swift in Sources */,
 				7536D08122E65953000900EC /* calendarEntry.swift in Sources */,
 				F4102E5F22CD4A5D00A526CF /* AlertVC.swift in Sources */,
+				40B986CE22EA357700D9FC43 /* UITextView+Extensions.swift in Sources */,
 				7536D08522E677B1000900EC /* UIAlertController+Extemsions.swift in Sources */,
 				B7FDA0FE22E1640500B99A62 /* DesignableUITextField.swift in Sources */,
 				F46F627E22D8F818000919AD /* DateCell.swift in Sources */,
 				F446397922B4C196004CA54C /* GetEmailVC.swift in Sources */,
 				F4E1E56122AB6C1900794980 /* EmailSignUpVC.swift in Sources */,
 				F4102E8F22CE05A700A526CF /* DataSet.swift in Sources */,
-				7579A2C922D91B930010CAD6 /* DateHeader.swift in Sources */,
 				40A4776222E7CAEC007C0795 /* CalendarCell.swift in Sources */,
+				40B986D822EA44F400D9FC43 /* UIApplication+Extensions.swift in Sources */,
+				40B986D622EA412800D9FC43 /* String+Extensions.swift in Sources */,
 				40F769BB22E044A200CE3EE0 /* HelperExtension.swift in Sources */,
 				F4102E8D22CE036F00A526CF /* PostCell.swift in Sources */,
 				40F769B922E0435D00CE3EE0 /* RoundedWhiteButton.swift in Sources */,
@@ -700,14 +736,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = V5ZPY8B92W;
 				INFOPLIST_FILE = FlowClu/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.harmangill.FloClu;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shiva.FloClu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
@@ -722,14 +758,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = V5ZPY8B92W;
 				INFOPLIST_FILE = FlowClu/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.harmangill.FloClu;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shiva.FloClu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;

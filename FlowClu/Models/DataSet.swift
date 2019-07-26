@@ -8,12 +8,12 @@
 
 import Foundation
 
-class DataSet {
-    let allPosts = [
-        Post(title: "Hello", detail: "It's working"),
-        Post(title: "Hello", detail: "It's working"),
-        Post(title: "Hello", detail: "It's working"),
-        Post(title: "Hello", detail: "It's working"),
-        Post(title: "Hello", detail: "It's working")
-    ]
-}
+//class DataSet {
+//    let allPosts = [
+//        Post(title: "Hello", detail: "It's working"),
+//        Post(title: "Hello", detail: "It's working"),
+//        Post(title: "Hello", detail: "It's working"),
+//        Post(title: "Hello", detail: "It's working"),
+//        Post(title: "Hello", detail: "It's working")
+//    ]
+//}
