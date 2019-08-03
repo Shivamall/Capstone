@@ -1,2 +1,0 @@
-# FlowClu
-A Capstone Project
