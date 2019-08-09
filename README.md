@@ -18,7 +18,7 @@ product can send alert to users and take help from users nearby.
 ## Note
    This application has OAuth signin and  post feasture running. Rest is a read-only mode.
    
-## For IOS [FloClu-IOS](https://github.com/AshishProjects/FloClu-IOS)
+## For Android [FloClu-Android](https://github.com/AshishProjects/FloClu-Android) this is the lonk for android project.
 ## For Backend [Floclu-backend](https://github.com/AshishProjects/FloClu-Backend)
    
    
